@@ -2,8 +2,7 @@ import java.util.ArrayList;
 
 public class Prime {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		primePrint(100);
 		System.out.println();
 		primePrint(1000);
@@ -19,25 +18,6 @@ public class Prime {
 		primePrint787();
 		System.out.println();
 		primePrint939();
-		
-		
-//		System.out.println("starting");
-//		ArrayList<Integer> primess = new ArrayList<Integer>();
-//		ArrayList<Integer> primeList = new ArrayList<Integer>();
-//		for(int x=0;x<=10000000;x++){
-//			primess.add(x);
-//		}
-//		for(int x=0;x<primess.size();x++){
-//			if(((primess.get(x)==2)||(primess.get(x)==3)||(primess.get(x)==5)||(primess.get(x)==7))){
-//				primeList.add(primess.get(x));
-//
-//			}
-//			else if((primess.get(x)%2==0 || primess.get(x)%3==0 || primess.get(x)%5==0 ||primess.get(x)%7==0))
-//				continue;
-//			else
-//				primeList.add(primess.get(x));
-//		}
-
 	}
 	
 	public static void primePrint(int aLength){
@@ -52,20 +32,17 @@ public class Prime {
 			else if((range.get(x)%2==0)||(range.get(x)%3==0)||(range.get(x)%5==0)||(range.get(x)%7==0)){
 				continue;
 			}else
-				primeList.add(range.get(x));
-				
+				primeList.add(range.get(x));				
 		}
 		for(int x=((primeList.size())-5);x<primeList.size();x++)
 			System.out.println(primeList.get(x));
 		final long endTime = System.currentTimeMillis();
-		System.out.println("Total time spent finding prine numbers in a range from 1 to "+aLength+":"+(endTime - startTime)+" milliseconds");
-		
+		System.out.println("Total time spent finding prine numbers in a range from 1 to "+aLength+":"+(endTime - startTime)+" milliseconds");		
 	}
 	public static void primePrint787(){
 		final long startTime = System.currentTimeMillis();
 		ArrayList<Double> range = new ArrayList<Double>();
-		ArrayList<Double> primeList = new ArrayList<Double>();
-		
+		ArrayList<Double> primeList = new ArrayList<Double>();		
 		for(double x=7870000000L; x<=7879999999L;x++)
 			range.add(x);
 		for(int x=0;x<range.size();x++){
@@ -74,8 +51,7 @@ public class Prime {
 			else if((range.get(x)%2==0)||(range.get(x)%3==0)||(range.get(x)%5==0)||(range.get(x)%7==0)){
 				continue;
 			}else
-				primeList.add(range.get(x));
-				
+				primeList.add(range.get(x));				
 		}
 		for(int x=0;x<5;x++)
 			System.out.println(primeList.get(x));
@@ -88,8 +64,7 @@ public class Prime {
 	public static void primePrint939(){
 		final long startTime = System.currentTimeMillis();
 		ArrayList<Double> range = new ArrayList<Double>();
-		ArrayList<Double> primeList = new ArrayList<Double>();
-		
+		ArrayList<Double> primeList = new ArrayList<Double>();		
 		for(double x=9390000000L; x<=9399999999L;x++)
 			range.add(x);
 		for(int x=0;x<range.size();x++){
@@ -98,8 +73,7 @@ public class Prime {
 			else if((range.get(x)%2==0)||(range.get(x)%3==0)||(range.get(x)%5==0)||(range.get(x)%7==0)){
 				continue;
 			}else
-				primeList.add(range.get(x));
-				
+				primeList.add(range.get(x));				
 		}
 		for(int x=0;x<5;x++)
 			System.out.println(primeList.get(x));
