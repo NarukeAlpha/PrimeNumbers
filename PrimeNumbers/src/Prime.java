@@ -36,6 +36,7 @@ public class Prime {
 		}
 		for(int x=((primeList.size())-5);x<primeList.size();x++)
 			System.out.println(primeList.get(x));
+		System.out.println("number of prime numbers: "+primeList.size());
 		final long endTime = System.currentTimeMillis();
 		System.out.println("Total time spent finding prine numbers in a range from 1 to "+aLength+":"+(endTime - startTime)+" milliseconds");		
 	}
@@ -58,6 +59,7 @@ public class Prime {
 		System.out.println();
 		for(int x=((primeList.size())-5);x<primeList.size();x++)
 			System.out.println(primeList.get(x));
+		System.out.println("number of prime numbers: "+primeList.size());
 		final long endTime = System.currentTimeMillis();
 		System.out.println("Total time spent finding prine numbers in a range from 7870000000 to 7879999999:"+(endTime - startTime)+" milliseconds");
 	}
@@ -80,6 +82,7 @@ public class Prime {
 		System.out.println();
 		for(int x=((primeList.size())-5);x<primeList.size();x++)
 			System.out.println(primeList.get(x));
+		System.out.println("number of prime numbers: "+primeList.size());
 		final long endTime = System.currentTimeMillis();
 		System.out.println("Total time spent finding prine numbers in a range from 9390000000 to 9399999999:"+(endTime - startTime)+" milliseconds");
 	}
